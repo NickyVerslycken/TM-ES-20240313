@@ -20,8 +20,8 @@
     /ip pool add name=dhcp_pool1 ranges="10.$groupNumber.$studentNumber.10-10.$groupNumber.$studentNumber.100"
     /ip dhcp-server network add address="10.$groupNumber.$studentNumber.0/24" gateway="10.$groupNumber.$studentNumber.1" dns-server=1.1.1.1
     /ip dhcp-server add address-pool=dhcp_pool1 interface=bridge-lan disabled=no
-    /password old-password="" new-password="router$groupNumber$studentNumberpass" confirm-new-password="router$groupNumber$studentNumberpass"
+    /password old-password="" new-password="router-$groupNumber-$studentNumber-pass" confirm-new-password="router-$groupNumber-$studentNumber-pass"
 }
 
 
-#het wachtwoord van jouw router zal bv. het volgende zijn indien je student 1 bent in groep 1: "router11"
+#het wachtwoord van jouw router zal bv. het volgende zijn indien je student 1 bent in groep 1: "router-1-1-pass"
